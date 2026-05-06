@@ -1,0 +1,7 @@
+expression Parameter1 = #datetime(2022, 5, 12, 0, 0, 0) meta [IsParameterQuery=true, Type="DateTime", IsParameterQueryRequired=true]
+	lineageTag: 626c73ed-50be-408f-ac18-4179bc439b84
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = DateTime
+

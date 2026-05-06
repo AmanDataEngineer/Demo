@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":{\"visual\":\"1.8.95\",\"report\":\"2.0.95\",\"page\":\"1.3.95\"},\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "e0932a50b12844b462e3",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"17dd593ae5d9b00a36b0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":47.24445777295901,\"z\":0,\"width\":1201.8990057440772,\"height\":311.81342130152944,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"HumanResources vEmployee.AdditionalContactInfo\",\"active\":true}],\"Series\":[{\"queryRef\":\"Query1.Trips.Description\"}],\"Y\":[{\"queryRef\":\"Sum(Query1.Trips.Budget)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HumanResources vEmployee\",\"Type\":0},{\"Name\":\"q\",\"Entity\":\"Query1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"AdditionalContactInfo\"},\"Name\":\"HumanResources vEmployee.AdditionalContactInfo\",\"NativeReferenceName\":\"AdditionalContactInfo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"q\"}},\"Property\":\"Trips.Description\"},\"Name\":\"Query1.Trips.Description\",\"NativeReferenceName\":\"Trips.Description\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"q\"}},\"Property\":\"Trips.Budget\"}},\"Function\":0},\"Name\":\"Sum(Query1.Trips.Budget)\",\"NativeReferenceName\":\"Sum of Trips.Budget\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"q\"}},\"Property\":\"Trips.Budget\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 311.81,
+          "width": 1201.90,
+          "x": 0.00,
+          "y": 47.24,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

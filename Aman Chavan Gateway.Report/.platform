@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Aman Chavan Gateway"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e5f4e00f-1a38-a36d-4767-5f2feaebda7c"
+  }
+}

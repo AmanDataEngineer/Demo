@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.40\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY22SU11\",\"version\":\"5.40\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY22SU11",
+            "path": "BaseThemes/CY22SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"7670f4d30deeaec1020f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":191.24260355029588,\"y\":83.31360946745563,\"z\":0,\"width\":759.2899408284025,\"height\":554.792899408284}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sheet1.Column11\",\"active\":true},{\"queryRef\":\"Sheet1.Column16\"},{\"queryRef\":\"Table1.Engineer Name\"},{\"queryRef\":\"Table1.Case Number\"},{\"queryRef\":\"Table1.Deployment ETA\"},{\"queryRef\":\"Table1.Icm#\"},{\"queryRef\":\"Sheet1.Column10\"}],\"Series\":[{\"queryRef\":\"Sheet1.Column12\"}],\"Rows\":[{\"queryRef\":\"Sheet1.Column13\"}],\"Y\":[{\"queryRef\":\"CountNonNull(Table1.ICM_Id)\"}],\"Tooltips\":[{\"queryRef\":\"Sum(Table1.ICM_in SD)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Table1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Column11\"},\"Name\":\"Sheet1.Column11\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Column12\"},\"Name\":\"Sheet1.Column12\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Column13\"},\"Name\":\"Sheet1.Column13\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Column16\"},\"Name\":\"Sheet1.Column16\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Engineer Name\"},\"Name\":\"Table1.Engineer Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Case Number\"},\"Name\":\"Table1.Case Number\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Deployment ETA\"},\"Name\":\"Table1.Deployment ETA\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ICM_Id\"}},\"Function\":5},\"Name\":\"CountNonNull(Table1.ICM_Id)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ICM_in SD\"}},\"Function\":0},\"Name\":\"Sum(Table1.ICM_in SD)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Icm#\"},\"Name\":\"Table1.Icm#\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Column10\"},\"Name\":\"Sheet1.Column10\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 554.79,
+          "width": 759.28,
+          "x": 191.24,
+          "y": 83.31,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

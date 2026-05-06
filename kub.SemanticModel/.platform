@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "kub"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "fef1ca0c-da0e-ba25-455f-d9f86c82c3a8"
+  }
+}

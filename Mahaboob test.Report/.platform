@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Mahaboob test"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1d7d9da7-a3b1-ac50-4a38-4a4cd834d1b8"
+  }
+}

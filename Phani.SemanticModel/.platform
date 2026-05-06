@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Phani"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "78951c33-3aac-8a7b-4bdf-886bdc796595"
+  }
+}

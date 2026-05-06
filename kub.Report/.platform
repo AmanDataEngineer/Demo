@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "kub"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "397bc0d3-278d-9be1-494b-10d4b997e526"
+  }
+}

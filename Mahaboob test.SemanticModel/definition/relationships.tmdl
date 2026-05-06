@@ -1,0 +1,14 @@
+relationship babe53f0-8f7b-417b-95b4-84147c76cc2a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Query1.'Trips.StartsAt'
+	toColumn: LocalDateTable_6bee8e4d-e8a0-47af-bf30-56d7bb16a9e7.Date
+
+relationship 676fae28-20f1-40a4-b41a-15617ac136b1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Query1.'Trips.EndsAt'
+	toColumn: LocalDateTable_bfbdf35e-d84c-4c99-8095-e2ded85886ef.Date
+
+relationship dacb8e28-bad7-1c5a-ef69-41d08c30b22f
+	fromColumn: Query1.'HumanResources vEmployee.StateProvinceName'
+	toColumn: 'HumanResources vEmployee'.AddressLine1
+

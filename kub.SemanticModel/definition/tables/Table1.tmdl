@@ -1,0 +1,172 @@
+table Table1
+	lineageTag: 7d0c90ae-eed2-4aa5-a65c-580245177199
+
+	column 'Case Number'
+		dataType: string
+		lineageTag: 9891474a-a7b6-4453-a254-7a53380bf82b
+		summarizeBy: none
+		sourceColumn: Case Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Engineer Name'
+		dataType: string
+		lineageTag: 15abd346-cd90-4de9-9bd8-4213f6a03bd5
+		summarizeBy: none
+		sourceColumn: Engineer Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sum of Last Reviewed Age'
+		dataType: string
+		lineageTag: 96fb0d27-53f8-484e-909b-e1df410833ae
+		summarizeBy: none
+		sourceColumn: Sum of Last Reviewed Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Reviewed On'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: cc257d3b-ecab-4fa3-be3f-410c48129232
+		summarizeBy: none
+		sourceColumn: Last Reviewed On
+
+		variation Variation
+			isDefault
+			relationship: 4f900a13-0054-4a3a-84f3-4e45995575f9
+			defaultHierarchy: LocalDateTable_9b6956e2-bbe8-43af-af2e-8ef8ae79ab14.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Reviewed By'
+		dataType: string
+		lineageTag: a7144f1d-3b8d-4108-92ef-7970e77b8349
+		summarizeBy: none
+		sourceColumn: Last Reviewed By
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sum of Case Age Days'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3a1340ed-9e21-4794-9fbc-3c8018bd2c48
+		summarizeBy: sum
+		sourceColumn: Sum of Case Age Days
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sum of Idle_Update'
+		dataType: int64
+		formatString: 0
+		lineageTag: 633ccec4-f9f9-488e-b6e9-e304117ad549
+		summarizeBy: sum
+		sourceColumn: Sum of Idle_Update
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sum of Idle_Email'
+		dataType: int64
+		formatString: 0
+		lineageTag: 83257704-9837-49f9-aa6b-0693567f4d89
+		summarizeBy: sum
+		sourceColumn: Sum of Idle_Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sum of pre_icm'
+		dataType: int64
+		formatString: 0
+		lineageTag: ef8eea05-d8a0-434c-bb1f-25208798daaf
+		summarizeBy: sum
+		sourceColumn: Sum of pre_icm
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICM_Id
+		dataType: int64
+		formatString: 0
+		lineageTag: 708bdfa8-ed63-4f95-9d62-93d7ee8cdff6
+		summarizeBy: count
+		sourceColumn: ICM_Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ICM_in SD'
+		dataType: int64
+		formatString: 0
+		lineageTag: c462c5f6-8a34-4a91-ac6b-e12d8e4eb0c9
+		summarizeBy: sum
+		sourceColumn: ICM_in SD
+
+		annotation SummarizationSetBy = Automatic
+
+	column Icm#
+		dataType: string
+		lineageTag: e129bbe6-1b29-4a05-80f4-a2a2976718b8
+		summarizeBy: none
+		sourceColumn: Icm#
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Deployment ETA'
+		dataType: string
+		lineageTag: f3206a12-ce6a-43d8-b346-39c69f638efd
+		summarizeBy: none
+		sourceColumn: Deployment ETA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sum of ICm_Age'
+		dataType: int64
+		formatString: 0
+		lineageTag: 80932457-90d4-497a-ab82-92877332b118
+		summarizeBy: sum
+		sourceColumn: Sum of ICm_Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Case Internal Title'
+		dataType: string
+		lineageTag: 155cdb23-c728-4a88-a7e1-28eba547c030
+		summarizeBy: none
+		sourceColumn: Case Internal Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Technical Advisor'
+		dataType: string
+		lineageTag: 23f863a7-ecf7-45f4-94f3-83afa23fe490
+		summarizeBy: none
+		sourceColumn: Technical Advisor
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 794a64fa-2228-496e-8bbd-16b8f595ebb4
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Manager
+		dataType: string
+		lineageTag: 30358548-4389-4a20-9952-a3271150ba13
+		summarizeBy: none
+		sourceColumn: Manager
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Table1-0ce88aa4-b839-4242-91da-5865e640d6fb = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\v-kuberpujar\Downloads\15th July.xlsx"), null, true),
+				    Table1_Table = Source{[Item="Table1",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Table1_Table,{{"Case Number", type any}, {"Engineer Name", type text}, {"Sum of Last Reviewed Age", type any}, {"Last Reviewed On", type datetime}, {"Last Reviewed By", type text}, {"Sum of Case Age Days", Int64.Type}, {"Sum of Idle_Update", Int64.Type}, {"Sum of Idle_Email", Int64.Type}, {"Sum of pre_icm", Int64.Type}, {"ICM_Id", Int64.Type}, {"ICM_in SD", Int64.Type}, {"Icm#", type text}, {"Deployment ETA", type any}, {"Sum of ICm_Age", Int64.Type}, {"Case Internal Title", type text}, {"Technical Advisor", type text}, {"Status", type text}, {"Manager", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

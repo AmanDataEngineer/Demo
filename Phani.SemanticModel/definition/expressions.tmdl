@@ -1,0 +1,9 @@
+expression 'DirectLake - Phani' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/fa681d93-47f5-429d-aad1-1f8bbbad0a6a/64d2d0cb-0e92-4b36-be39-f555e9f90a9f", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: d2d866a8-4de8-4de2-a4ae-eb6182345b53
+
+	annotation PBI_IncludeFutureArtifacts = False
+

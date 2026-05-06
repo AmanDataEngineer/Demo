@@ -1,0 +1,292 @@
+table Query1
+	lineageTag: adc6fea4-c37a-4721-9e52-1da6a31636a9
+
+	column UserName
+		dataType: string
+		lineageTag: 7ad8fd3d-2db9-4370-a3a5-2d2c1280737d
+		summarizeBy: none
+		sourceColumn: UserName
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstName
+		dataType: string
+		lineageTag: b59c0102-a1c5-4feb-96d3-e0d45efc806d
+		summarizeBy: none
+		sourceColumn: FirstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastName
+		dataType: string
+		lineageTag: 34c8aa33-05d2-47ec-98b6-a342c88a4bbb
+		summarizeBy: none
+		sourceColumn: LastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column MiddleName
+		dataType: string
+		lineageTag: 425bcc0d-29bd-492f-9b31-2df91914cb65
+		summarizeBy: none
+		sourceColumn: MiddleName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		lineageTag: b6cb02e1-289b-4820-bc7d-1e562e400e8b
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b305c78-d9ac-4aef-ae28-6a09240b8b6d
+		summarizeBy: sum
+		sourceColumn: Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column FavoriteFeature
+		dataType: string
+		lineageTag: 49ace360-0914-463d-85a1-ecdd64cec24a
+		summarizeBy: none
+		sourceColumn: FavoriteFeature
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Trips.TripId'
+		dataType: int64
+		formatString: 0
+		lineageTag: 58e30d69-5066-4dfe-91b2-cd07339190dc
+		summarizeBy: count
+		sourceColumn: Trips.TripId
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Trips.ShareId'
+		dataType: string
+		lineageTag: b1b80789-550f-4b56-9bd0-5dd4e7aff417
+		summarizeBy: none
+		sourceColumn: Trips.ShareId
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Trips.Name'
+		dataType: string
+		lineageTag: 8dd2a50e-9706-415a-9447-03fb03dac6b6
+		summarizeBy: none
+		sourceColumn: Trips.Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Trips.Budget'
+		dataType: double
+		lineageTag: b89d9eab-13b6-4cdc-ae9d-07df56147305
+		summarizeBy: sum
+		sourceColumn: Trips.Budget
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Trips.Description'
+		dataType: string
+		lineageTag: 1c8dbd4f-d22d-448b-912d-1ff764975ecc
+		summarizeBy: none
+		sourceColumn: Trips.Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Trips.StartsAt'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6e308d6a-4697-4508-adac-ee119d617f2d
+		summarizeBy: none
+		sourceColumn: Trips.StartsAt
+
+		variation Variation
+			isDefault
+			relationship: babe53f0-8f7b-417b-95b4-84147c76cc2a
+			defaultHierarchy: LocalDateTable_6bee8e4d-e8a0-47af-bf30-56d7bb16a9e7.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Trips.EndsAt'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: fe670c11-7dd7-4616-b847-040aadfc8a9c
+		summarizeBy: none
+		sourceColumn: Trips.EndsAt
+
+		variation Variation
+			isDefault
+			relationship: 676fae28-20f1-40a4-b41a-15617ac136b1
+			defaultHierarchy: LocalDateTable_bfbdf35e-d84c-4c99-8095-e2ded85886ef.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.BusinessEntityID'
+		dataType: int64
+		formatString: 0
+		lineageTag: b14771d2-71c4-4238-878b-df880a00de50
+		summarizeBy: count
+		sourceColumn: HumanResources vEmployee.BusinessEntityID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.Title'
+		dataType: string
+		lineageTag: 9c89a261-7ea1-4ff9-9c93-aed8b23d9c2b
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.FirstName'
+		dataType: string
+		lineageTag: 74b96f74-ece5-4f65-9d96-9ef8dc2dda4b
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.FirstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.MiddleName'
+		dataType: string
+		lineageTag: 2f35a9f7-9805-40e0-8b7d-f119063d9abf
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.MiddleName
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.LastName'
+		dataType: string
+		lineageTag: de08e92b-42d6-46f3-87c4-4f09aa3370e7
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.LastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.Suffix'
+		dataType: string
+		lineageTag: 0e61044b-d3a5-4528-a9f0-f49af8950b88
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.Suffix
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.JobTitle'
+		dataType: string
+		lineageTag: 36b17305-88af-4a34-9d02-b1c02a740a12
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.JobTitle
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.PhoneNumber'
+		dataType: string
+		lineageTag: fe028b43-ad63-47ca-95f1-4a555c73ef57
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.PhoneNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.PhoneNumberType'
+		dataType: string
+		lineageTag: d307cbe6-20af-4592-8136-7881509aa6ca
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.PhoneNumberType
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.EmailAddress'
+		dataType: string
+		lineageTag: f6d520b3-734c-45de-8230-498f01abe33e
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.EmailAddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.EmailPromotion'
+		dataType: int64
+		formatString: 0
+		lineageTag: 48b56e5e-a6c4-4f8a-ab50-992fd25e40b7
+		summarizeBy: sum
+		sourceColumn: HumanResources vEmployee.EmailPromotion
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.AddressLine1'
+		dataType: string
+		lineageTag: 4ad15324-9112-4821-b157-637d9c78a04e
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.AddressLine1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.AddressLine2'
+		dataType: string
+		lineageTag: 0731a9f7-3509-4be7-9291-df88d9bdfbe8
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.AddressLine2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.City'
+		dataType: string
+		lineageTag: a0d15b4a-2cdc-47e0-8811-55a7b45d5bca
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.City
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.StateProvinceName'
+		dataType: string
+		lineageTag: fc52e889-a567-48de-a605-43fd149ee3db
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.StateProvinceName
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.PostalCode'
+		dataType: string
+		lineageTag: 040c9dd7-4fe8-4acb-b5d2-cbd9c5ae3635
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.PostalCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.CountryRegionName'
+		dataType: string
+		lineageTag: 0b06a494-b384-4fea-9037-bee230134124
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.CountryRegionName
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HumanResources vEmployee.AdditionalContactInfo'
+		dataType: string
+		lineageTag: 4cc03772-d7e4-4257-b006-f65b3dd6f91b
+		summarizeBy: none
+		sourceColumn: HumanResources vEmployee.AdditionalContactInfo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Query1 = m
+		mode: import
+		source =
+				let
+				    Source = OData.Feed("https://services.odata.org/TripPinRESTierService/People", null, [Implementation="2.0"]),
+				    #"Expanded Trips" = Table.ExpandTableColumn(Source, "Trips", {"TripId", "ShareId", "Name", "Budget", "Description", "Tags", "StartsAt", "EndsAt", "PlanItems", "GetInvolvedPeople"}, {"Trips.TripId", "Trips.ShareId", "Trips.Name", "Trips.Budget", "Trips.Description", "Trips.Tags", "Trips.StartsAt", "Trips.EndsAt", "Trips.PlanItems", "Trips.GetInvolvedPeople"}),
+				    #"Merged Queries" = Table.NestedJoin(#"Expanded Trips", {"UserName"}, #"HumanResources vEmployee", {"FirstName"}, "HumanResources vEmployee", JoinKind.LeftOuter),
+				    #"Expanded HumanResources vEmployee" = Table.ExpandTableColumn(#"Merged Queries", "HumanResources vEmployee", {"BusinessEntityID", "Title", "FirstName", "MiddleName", "LastName", "Suffix", "JobTitle", "PhoneNumber", "PhoneNumberType", "EmailAddress", "EmailPromotion", "AddressLine1", "AddressLine2", "City", "StateProvinceName", "PostalCode", "CountryRegionName", "AdditionalContactInfo"}, {"HumanResources vEmployee.BusinessEntityID", "HumanResources vEmployee.Title", "HumanResources vEmployee.FirstName", "HumanResources vEmployee.MiddleName", "HumanResources vEmployee.LastName", "HumanResources vEmployee.Suffix", "HumanResources vEmployee.JobTitle", "HumanResources vEmployee.PhoneNumber", "HumanResources vEmployee.PhoneNumberType", "HumanResources vEmployee.EmailAddress", "HumanResources vEmployee.EmailPromotion", "HumanResources vEmployee.AddressLine1", "HumanResources vEmployee.AddressLine2", "HumanResources vEmployee.City", "HumanResources vEmployee.StateProvinceName", "HumanResources vEmployee.PostalCode", "HumanResources vEmployee.CountryRegionName", "HumanResources vEmployee.AdditionalContactInfo"})
+				in
+				    #"Expanded HumanResources vEmployee"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

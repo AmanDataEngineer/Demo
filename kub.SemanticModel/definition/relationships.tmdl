@@ -1,0 +1,5 @@
+relationship 4f900a13-0054-4a3a-84f3-4e45995575f9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Table1.'Last Reviewed On'
+	toColumn: LocalDateTable_9b6956e2-bbe8-43af-af2e-8ef8ae79ab14.Date
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Test workspact for GIThub"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f1a6b7bd-a987-8127-4ffa-ffee2568fd52"
+  }
+}

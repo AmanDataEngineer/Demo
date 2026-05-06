@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Sales Analysis Hema"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a8cf1861-351f-acd2-4cd2-f32bdb906eb6"
+  }
+}
