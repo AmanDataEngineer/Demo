@@ -1,0 +1,43 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "Sindhu Aggregation",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "gatewayObjectId": "b5ab5668-2430-4c55-b0b3-4f4569c98981",
+  "queriesMetadata": {
+    "GeographyDimension": {
+      "queryId": "f3b6af03-b18e-4bca-9118-ea83caa8d5ef",
+      "queryName": "GeographyDimension",
+      "loadEnabled": false
+    },
+    "SalesFact_Aggregation_Region": {
+      "queryId": "71646a8f-eb1f-4f1c-96ae-50d26dfc22e0",
+      "queryName": "SalesFact_Aggregation_Region"
+    },
+    "SalesFactGeo": {
+      "queryId": "6e6655eb-4fe8-4a57-b534-e59f4eebab4f",
+      "queryName": "SalesFactGeo"
+    },
+    "GeographyDimension_DataDestination": {
+      "queryId": "3eccef00-6cc1-4b08-8bdc-0db24a8e0353",
+      "queryName": "GeographyDimension_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "localhost",
+      "kind": "SQL",
+      "connectionId": "{\"ClusterId\":\"b5ab5668-2430-4c55-b0b3-4f4569c98981\",\"DatasourceId\":\"43f80a38-b368-459f-85e0-d190ea3f1cf7\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"494d148f-d1b6-489e-8a9c-42b01a3fda29\",\"DatasourceId\":\"1f763d8e-00ea-4407-8acf-2c171bea12bb\"}"
+    }
+  ]
+}
