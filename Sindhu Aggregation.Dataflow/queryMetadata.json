@@ -19,11 +19,18 @@
     },
     "SalesFactGeo": {
       "queryId": "6e6655eb-4fe8-4a57-b534-e59f4eebab4f",
-      "queryName": "SalesFactGeo"
+      "queryName": "SalesFactGeo",
+      "loadEnabled": false
     },
     "GeographyDimension_DataDestination": {
       "queryId": "3eccef00-6cc1-4b08-8bdc-0db24a8e0353",
       "queryName": "GeographyDimension_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "SalesFactGeo_DataDestination": {
+      "queryId": "5be5a09b-0e01-4df5-9240-40e646bf85ac",
+      "queryName": "SalesFactGeo_DataDestination",
       "isHidden": true,
       "loadEnabled": false
     }
