@@ -1,0 +1,45 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "testing",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "gatewayObjectId": "b5ab5668-2430-4c55-b0b3-4f4569c98981",
+  "queriesMetadata": {
+    "DefaultDestination": {
+      "queryId": "ae8b5318-084b-4f39-be83-2985a3cac9f6",
+      "queryName": "DefaultDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "SalesFact": {
+      "queryId": "4ab0f73d-3bf2-424c-8aef-245962126d1b",
+      "queryName": "SalesFact",
+      "loadEnabled": false
+    },
+    "SalesFact_Aggregation_Region": {
+      "queryId": "4e0a4ba2-aea6-4de3-8c38-06a2bccaa7d0",
+      "queryName": "SalesFact_Aggregation_Region",
+      "loadEnabled": false
+    },
+    "SalesFactGeo": {
+      "queryId": "b41ece1f-9922-4c80-9f47-42df7f825939",
+      "queryName": "SalesFactGeo",
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"494d148f-d1b6-489e-8a9c-42b01a3fda29\",\"DatasourceId\":\"1f763d8e-00ea-4407-8acf-2c171bea12bb\"}"
+    },
+    {
+      "path": "localhost",
+      "kind": "SQL",
+      "connectionId": "{\"ClusterId\":\"b5ab5668-2430-4c55-b0b3-4f4569c98981\",\"DatasourceId\":\"43f80a38-b368-459f-85e0-d190ea3f1cf7\"}"
+    }
+  ]
+}
