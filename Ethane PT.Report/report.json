@@ -1,0 +1,53 @@
+{
+  "config": "{\"version\":\"5.70\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY26SU02\",\"type\":2,\"version\":{\"visual\":\"2.6.0\",\"report\":\"3.1.0\",\"page\":\"2.3.0\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY26SU02",
+            "path": "BaseThemes/CY26SU02.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "bbea80e751e32dbd063b",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"137cee6774252cadb0ee\",\"layouts\":[{\"id\":0,\"position\":{\"x\":22.677339731020325,\"y\":0,\"z\":0,\"width\":323.15209116703966,\"height\":359.0578790744885,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Sheet1.Column1\",\"active\":true}],\"Columns\":[{\"queryRef\":\"Sheet1.Column2\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Column1\"},\"Name\":\"Sheet1.Column1\",\"NativeReferenceName\":\"Column1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Column2\"},\"Name\":\"Sheet1.Column2\",\"NativeReferenceName\":\"Column2\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 359.06,
+          "queryBinary": "H4sIAAAAAAAEAK1SzU7DMAx+F58r1JRbj5TCAYHGOo0D2iGkHgtqkypNYFPVd8dOC4NJCA7cYvv7k50BCtu20tQ95I8DVEhvr9V9QHe4lF5WO9nhDIF8gDjgxxpdr62BPEvgytk20u9ki5BDDwmUJOMJCdUO0QvqrA4dDdNxk5BNg8pHSmGb0BpWLPedw34SpSQ2OIVL3B6LqDyOCSyc7dBF9YkugLqz+eR39jHgvtevrIQOjcIZdiT+U4bspwzZLxmIuCHqhTa1Ns9stXC6ldOar50NHbWn85DpCy2O4nGd8ibDk7deNpCLqFKhsqb+A1l8I2eRzAdfYh0iiAW4seaQlPY8+ZrrgdLaN34VNhg6pUjT8dR/ZbtTBEE+f46gotyjCmx3i95p1d9o/mdipDzv5VYMS5sCAAA=",
+          "width": 323.15,
+          "x": 22.68,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"63d5d717248ace029b29\",\"layouts\":[{\"id\":0,\"position\":{\"x\":364.72721400724356,\"y\":7.559113243673441,\"z\":1000,\"width\":914.6527024844864,\"height\":512.1299222588757,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.Column1\"},{\"queryRef\":\"Sheet1.Column2\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Column1\"},\"Name\":\"Sheet1.Column1\",\"NativeReferenceName\":\"Column1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Column2\"},\"Name\":\"Sheet1.Column2\",\"NativeReferenceName\":\"Column2\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 512.13,
+          "queryBinary": "H4sIAAAAAAAEAK1SO0/DMBD+LzdbKAliyUgIDAhUGlQG1ME4BzWK7cixoVWU/86dEygLYul2r+/hO49QOWOkbQcon0dokOKg1UNEf7iSQTY72eMyAuUIqcHBBv2gnYWyEHDtnUnwe2kQShhAQE00gSah2SGGnCqPh56a2bQVJNOhCglSuS4ay4z1vvc4zKTkxEWvcI2vxyQxT5OAlXc9+sQ+w3Og6iI+6519N7ge9AczoUercBk7Ak/kofjLQ/GPBwJuCXqpbavtG0utvDZyXvONd7Gn8nweEn2nxZE9zjOR8y7jS3BBdlDmiYevtsY2pjGm4MKGlUjyXPwmfyJJ98lR5aKle1xk2cSP+zluTkm9RxWZ7A6D12q41fwV8onUvgCG/6VkPgIAAA==",
+          "width": 914.65,
+          "x": 364.73,
+          "y": 7.56,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "config": "{\"version\":\"5.73\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY26SU05\",\"type\":2,\"version\":{\"visual\":\"2.9.0\",\"report\":\"3.3.0\",\"page\":\"2.3.1\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY26SU05",
+            "path": "BaseThemes/CY26SU05.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "6625f884cfd73c116c7d",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"49c2c57404ae75904292\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.448891554591802,\"y\":0,\"z\":0,\"width\":559.3743800318347,\"height\":359.0578790744885,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sravanthi Case.Car_Name\"},{\"queryRef\":\"CountNonNull(Sravanthi Case.ID)\"},{\"queryRef\":\"Sravanthi Case.ID Detail\"},{\"queryRef\":\"Sravanthi Case.Mode1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sravanthi Case\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Car_Name\"},\"Name\":\"Sravanthi Case.Car_Name\",\"NativeReferenceName\":\"Car_Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ID\"}},\"Function\":5},\"Name\":\"CountNonNull(Sravanthi Case.ID)\",\"NativeReferenceName\":\"Count of ID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ID Detail\"},\"Name\":\"Sravanthi Case.ID Detail\",\"NativeReferenceName\":\"ID Detail\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Mode1\"},\"Name\":\"Sravanthi Case.Mode1\",\"NativeReferenceName\":\"Mode1\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 359.06,
+          "queryBinary": "H4sIAAAAAAAEAK1TUU/CMBD+K0ufNGnMBvFlb7qBIQaCYPDBEFO3Y9Rs7dK1CFn23712E9C4J3zrXb/7vq+9u5pEsiiYSCsSvtZkCXjWPHkyoA4x02y5ZSV0EBLWxF3YwwpUxaUg4YCSsZKFK5+xAkhIKkLJCGk0IslSsR1ybrkXsQrw5vlQIshv1hTlcki0K41kbgphmUf7UkHVkqMjaVQCC9icAqfQNJTMlSxBOZWIqTenjunOxU/hmyPCAjTfWU5QIBLo8GcUNbnLMgUZ4uQfni70OoldZmxE0vLfnkxH0gg9k2Jm8vzq1wsm8XW/eVvnyY1nyek/WPRi0Izn/f95gvR5Oie52NFUphD0u2mv+5x0xWssv+ci5SKzYnPFC9ZO84OSpsR0uwUo+wGuNzb2aUAHdGjH1bxrqVlOwsBx2QVZQGqS7zGxiZV9J4oO6bnAC8rKz3Z4sFPYc99v7BOPexRgMNpDYizZFLTiSfXI7dYFDap9AS1j2OmpAwAA",
+          "width": 559.37,
+          "x": 9.45,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

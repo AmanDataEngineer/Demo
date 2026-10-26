@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Sravanthi Test Ms Access"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7a8f9468-3c84-94ac-4bff-a8aab23b99e0"
+  }
+}

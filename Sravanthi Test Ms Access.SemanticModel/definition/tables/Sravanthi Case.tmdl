@@ -1,0 +1,49 @@
+table 'Sravanthi Case'
+	lineageTag: 019a4744-9f53-4e01-abb6-c39cf8a652f5
+
+	column ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 404c1595-39ef-4770-bc30-17cf3307fba5
+		summarizeBy: count
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ID Detail'
+		dataType: string
+		lineageTag: c0905f94-da1c-4c1d-8c42-eb56b31d3203
+		summarizeBy: none
+		sourceColumn: ID Detail
+
+		annotation SummarizationSetBy = Automatic
+
+	column Car_Name
+		dataType: string
+		lineageTag: 02ea284a-dcb9-4e77-abb3-eee909c10a23
+		summarizeBy: none
+		sourceColumn: Car_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mode1
+		dataType: string
+		lineageTag: 6911f4fc-cbaa-4c62-87a4-f214852eeba6
+		summarizeBy: none
+		sourceColumn: Mode1
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Sravanthi Case' = m
+		mode: import
+		source =
+				let
+				    Source = Access.Database(File.Contents("C:\Users\Protyay\Desktop\Sravanthi.accdb"), [CreateNavigationProperties=true]),
+				    #"_Sravanthi Case" = Source{[Schema="",Item="Sravanthi Case"]}[Data]
+				in
+				    #"_Sravanthi Case"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
